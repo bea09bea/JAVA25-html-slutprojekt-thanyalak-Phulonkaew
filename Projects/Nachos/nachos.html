@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nachos | Flavorful Food Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@600&family=Permanent+Marker&family=Roboto:wght@100&family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+   <style>
+      body {
+        max-width: 100vw;
+        background-color: #39D68B;
+        font-family: "Cerebri Sans";
+        margin: 0px;
+        color: #841ed2;
+      }
+
+      .nav {
+        display: grid;
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      .nav > :first-child {
+        grid-area: 1 / 2 / span 1 / span 2;
+        padding: 20px;
+      } 
+
+      a {
+        font-size: 6vh;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold 700;
+        color: #885df1;
+      }
+
+      a:hover {
+        color: #F4F82D;
+      }
+
+      .nav > div > a:first-child {
+        margin-right: 150px;
+      }
+
+      .nav > :last-child {
+        grid-area: 1 / 3 /  1 /  3;
+        position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 70%;
+      }
+
+      .section1 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 150px;
+      }
+
+      .section1 > img {
+        width: 60vw;
+      }
+
+      .section1 > div:first-child {
+        grid-column:  1;
+        grid-row: 1;
+        padding-right: 0%;
+      }
+
+      .section1 > div:last-child {
+        grid-column:  2;
+        grid-row: 1;
+        display: flex;
+        text-align: center;
+        width: 20vw;
+        color: #841ed2;
+        font-family: 'Kalam', cursive;
+        font-size: 3.5vh;
+        margin-top: 40%;
+        margin-right: 20vw;
+      }
+
+      .title {
+        text-shadow: 3px 5px #c4dd07;
+        font-size: 20vh;
+        font-family: 'Permanent Marker', cursive;
+        position: absolute;
+          top: 30%;
+          right: 0;
+          bottom: 0;
+          left: 50%;
+      }
+
+      #section2 {
+        /* display: grid;
+        grid-template-columns: 2; */
+        /* grid-column: 2;
+        grid-row: 1; */
+        display: flex;
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Kalam', cursive;
+      }
+
+      /* #section2 > div {
+        text-align: center;
+      } */
+
+      #section2 > div:first-child {
+        grid-column:  1/1;
+        padding-right: 0%;
+        text-align: center;
+        font-size: 3.5vh;
+        padding-left: 12vw;
+      }
+
+      #section2 > div > div:first-child {
+        font-weight: bold;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-family: 'Kalam', cursive;
+        font-size: 5vh;
+        text-shadow: 2px 3px #c4dd07;
+        text-align: center;
+
+      }
+
+      #section2 > div:last-child {
+        grid-column:  2/2;
+      }
+
+      .nacho2 {
+        width: 20%;
+      }
+
+      #recipeTitle {
+        display: flex;
+        margin-left: 20%;
+        font-family: 'Kalam', cursive;
+        text-shadow: 2px 3px #c4dd07;
+      }
+
+      #section3 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+      }
+
+      #section3 > div:first-child {
+        display: flex;
+      }
+
+      .title2 {
+        font-size: 8vh;
+        margin-top: 6%;
+      }
+
+      .recipe {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        font-family: 'Kalam', cursive;
+        font-weight: bold 700;
+        font-size: 2vh;
+      }
+
+      .recipe > div:first-child {
+        grid-column:  1;
+        grid-row: 1;
+      }
+
+      .recipe > div:last-child {
+        grid-column:  2;
+        grid-row: 1;   
+      }
+
+      .chili {
+        position: absolute;
+          top: 300vh;
+          right: 0;
+          bottom: 0;
+          left: 2vw;
+        z-index: -1;
+        opacity: 20%;
+      }
+
+      .dish {
+        position: absolute;
+          top: 250vh;
+          right: 0;
+          bottom: 0;
+          left: 69.2vw;
+        z-index: -1;
+        opacity: 50%;
+        width: 30%;
+      }
+
+      li {
+        font-size: 4vh;
+      }
+
+      h3 {
+        font-size: 3vh;
+        font-family: 'Kalam', cursive;
+      }
+
+      p {
+        font-size: 4vh;
+        width: 20vw;
+        text-align: center;
+        padding-left: 4vw;
+        padding-top: 30vh;
+      }
+
+      .topping {
+        /* margin-top: 20vh; */
+      }
+
+      .cheddar {
+        width: 12vw;
+        position: absolute;
+          top: 385vh;
+          right: 0;
+          bottom: 0;
+          left: 40vw;
+      }
+
+      .t1, .t2, .t3 {
+        font-size: 2.2vw;
+        font-family: 'Amatic SC', cursive;
+        position: absolute;
+      }
+
+      .t1 {
+          top: 404vh;
+          right: 0;
+          bottom: 0;
+          left: 35vw;
+      }
+
+      .guacamole {
+        width: 16vw;
+        position: absolute;
+          top: 409vh;
+          right: 0;
+          bottom: 0;
+          left: 45vw;
+      }
+
+      .t2 {
+          top: 429vh;
+          right: 0;
+          bottom: 0;
+          left: 41vw;
+      }
+
+      .salsa {
+        width: 12vw;
+        position: absolute;
+          top: 425vh;
+          right: 0;
+          bottom: 0;
+          left: 61vw;
+      }
+
+      .t3 {
+          top: 449vh;
+          right: 0;
+          bottom: 0;
+          left: 59vw;
+      }
+
+      .footer {
+        height: 6vh;
+        width: 100%;
+        background-color: #841ed2;
+        margin-top: 60vh;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding-top: 1.5%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
+      }
+
+    </style>
+
+  </head>
+    
+  <body>
+    <div class="nav"> 
+      <div>
+        <a href="#section2">About</a>
+        <a href="#recipeTitle">Recipe</a>
+      </div>
+      <div>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/825/original/cheese.png?1695309898" class="cheese" alt="cheese">
+      </div>
+    </div>
+    <main>
+      <div class="section1">
+        <img id="mainImg" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/830/original/nacho.png?1695309954">
+        <div>The best thing about nachos is that they can be a snack, a starter or a main course. It also is quick and easy to prepare.</div>
+      </div>
+      <div class="title">Nachos</div>
+      <div id="section2">
+        <div>
+          <div>About nachos</div>
+          <div>The dish originated in northern Mexico in the 1940s. The meal was created by a restaurateur named Ignacio Anaya, and it was dubbed nachos after the creator's name. In Spanish, "Nacho" is a common nickname for Ignacio.</div>
+        </div>
+        <div>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/827/original/naaacho.png?1695309926" class="chips">
+        </div>
+      </div>
+
+      <div id="recipeTitle">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/828/original/nacho_3.png?1695309935" class="nacho2">
+        <div class="title2">Recipe</div>
+      </div>
+
+      <div id="section3">
+        <div class="recipe">
+          <div>
+            <img class="chili" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/826/original/chili.png?1695309910" class="jalapeno">
+            <h2>For the spice mix:</h3>
+            <ul>
+              <li>2 tablespoons chili powder</li>
+              <li>1 1/2 teaspoons salt</li>
+              <li>1 teaspoon garlic</li>
+              <li>1 teaspoon onion</li>
+              <li>1 teaspoon cumin</li>
+              <li>1/2 teaspoon dried oregano</li>
+              <li>1/4 teaspoon black pepper</li>
+              <li>Pinch of cayenne pepper (optional)</li>
+            </ul>
+    
+            <h3>Ground beef</h3> 
+            <ul>
+              <li>Jalapeño</li>
+              <li>Tomatoes</li>
+              <li>Corn</li>
+              <li>Cucumber</li>
+              <li>Red onion</li>
+              <li>Cilantro</li>
+            </ul>
+            
+            <h3>Tortilla chips</h3>
+          </div>
+
+          <div>
+            <p>Cook spice mix with ground beef</p>
+            <img class="dish" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/829/original/nacho_4.png?1695309945" alt="nacho dish">
+            <p>Chop everything into smaller pieces</p>
+            <p class="topping">Serve everything together with toppings</p>
+          </div>
+
+          <div>
+            <img class="cheddar" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/832/original/cheddar_sauce.png?1695310400" alt="cheddar">
+            <img class="guacamole" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/833/original/guacamole.png?1695310410" alt="guacamole">
+            <img class="salsa" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/831/original/salsa_2.png?1695309968" alt="salsa">
+            <h4 class="t1">Cheddar</h4>
+            <h4 class="t2">Guacamole</h4>
+            <h4 class="t3">Salsa</h4>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      Created by bea09bea@gmail.com
+    </div>
+    
+    <script>
+      ;
+
+      window.onscroll = function () {
+      scrollRotate();
+      };
+
+      function scrollRotate() {
+          let image = document.getElementById("mainImg");
+          image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+:root {
+    --primary-pink: #ffc0cb;
+    --primary-white: whitesmoke;
+    --primary-red: red;
+}
+
+body {
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a:first-child {
+    background-color: var(--primary-white);
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-container > div > a {
+    font-size: 3rem;
+}
+
+.image-container > div:nth-child(1) {
+    flex-basis: 30%;
+    border: 1px var(--primary-red);
+}
+
+.image-container > .project1 > a:first-child > img {
+    width: 100%;
+}
+
+.project1, .project2, .project3 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-pink);
+}
+
+footer > div:first-child {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div:first-child > img {
+    width: 50vw;
+}
+
+footer > div {
+    flex-basis: 50%;
+}
+
+footer > div >  a {
+    height: 2rem;
+    text-decoration: none;
+    color: var(--primary-red);
+}
+
+footer > a:hover {
+    color: var(--primary-white);
+}
+
+
+/* .social-icons {
+    float: end;
+} */
