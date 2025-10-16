@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hem</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Style-components/reset.css">
+    <link rel="stylesheet" href="./Style-components/template.css">
+    <link rel="stylesheet" href="./Style-components/nav.css">
+    <link rel="stylesheet" href="./Style-components/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="icon" href="./Image/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Norican&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index-style.css">
 </head>
 <body>
     <nav>
-        <a href="../index.html">Hem</a>
+        <a id="current-page" href="../index.html">Hem</a>
         <a href="./About/about.html">Om mig</a>
         <a href="./Contact/contact.html">Kontakta mig</a>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Projekt</button>
+            <div class="dropdown-content">
+                <a href="./Projects/projekt1/project1.html">Projekt 1</a>
+                <a href="./Projects/projekt2/project2.html">Projekt 2</a>
+                <a href="./Projects/projekt3/project3.html">Projekt 3</a>
+            </div>          
+        </div>
     </nav>
 
     <h1>Beas portfolio</h1>
 
     <div class="image-container">
         <div class="project1">
-            <a href="./Projects/project1.html"><img src="./Image/SheCodes Logo.webp" alt="Brand logo"></a>
-            <a href="./Projects/project1.html">Projekt 1</a>
+            <a href="./Projects/projekt1/project1.html"><img id="project-image" src="./Homepage-images/shecodes.png" alt="Brand logo"></a>
+            <a href="./Projects/projekt1/project1.html">Projekt 1</a>
         </div>
         <div class="project2">
-            <img src="" alt="">
-            <a href="./Projects/project2.html">Projekt 2</a>
-        </div>        
+            <a href="./Projects/projekt2/project2.html"><img id="project-image" src="./Homepage-images/project2-image.png" alt="Brand logo"></a>
+            <a href="./Projects/projekt2/project2.html">Projekt 2</a>
+        </div>      
         <div class="project3">
-            <img src="" alt="">
-            <a href="./Projects/project3.html">Projekt 3</a>
-        </div>               
+            <a href="./Projects/projekt3/project3.html"><img id="project-image" src="./Homepage-images/dog-paw.png" alt="Brand logo"></a>
+            <a href="./Projects/projekt3/project3.html">Projekt 3</a>
+        </div>       
     </div>
 
     <footer>
         <div>
-            <!-- <img src="../Slutprojekt - Portfolio/Image/footer-text.gif" alt="footer-text"> -->
+            <img  src="./Footer-images/footer-img.png" alt="footer-text">
         </div>
+
         <div>
-            <a href="./Contact/contact.html">Kontakta mig här</a>
+            <a href="./About/about.html">Om mig</a>
+            <a href="./Contact/contact.html">Kontakta mig</a>
+            <p>Bea09bea@gmail.com</p>
+            <div class="position">
+                <img id="pin" src="./Footer-images/pin.png" alt="pin">
+                <p>Malmö</p>
+            </div>
 
             <div class="social-icons">
-                <a href="https://facebook.com/yourpage" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="social" src="./Footer-images/instagram.png" alt="Instagram">
                 </a>
 
-                <a href="https://twitter.com/yourprofile" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter">
+                <a href="https://se.linkedin.com/" target="_blank">
+                    <img id="social" src="./Footer-images/linkedin.png" alt="Linkedin">
                 </a>
-
-                <p>Malmö</p>
-                <p>Bea09bea@gmail.com</p>
             </div>
         </div>
     </footer>

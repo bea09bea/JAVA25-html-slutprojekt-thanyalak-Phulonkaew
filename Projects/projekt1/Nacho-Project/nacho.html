@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachos - Food Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Caveat:wght@600&family=Permanent+Marker&family=Roboto:wght@100&family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nacho-style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#2">About</a>
+            <a href="#3">Recipe</a>
+        </div>
+
+        <div>
+            <img src="images/cheese-drip.png" class="cheese-drip" alt="cheese-drip">
+        </div>
+    </nav>
+
+    <main>
+        <div class="section1">
+            <div>
+                <img id="mainImg" class="spin-img" src="images/nacho-wheel.png">
+            </div> 
+            <div>
+                <div class="title">Nachos</div>
+                <div class="title-text">The best thing about nachos is that they can be a snack, a starter or a main course. It also is quick and easy to prepare.</div>
+            </div>
+        </div>
+
+        <div id="2" class="section2">
+            <div>
+                <div class="title2">About nachos</div>
+                <div class="section2-text">The dish originated in northern Mexico in the 1940s. The meal was created by a restaurateur named Ignacio Anaya, and it was dubbed nachos after the creator's name. In Spanish, "Nacho" is a common nickname for Ignacio.</div>
+            </div>
+            <div>
+                <img class="chips-chili" src="./images/nacho-chili.png" alt="Nacho and chili">
+            </div>
+        </div>
+
+        <div id="3" class="section3">
+            <div class="grid">
+                <div>
+                    <div>
+                        <div class="grid-title">
+                            <div>
+                                <img class="nacho-dish" src="./images/nacho1.png" alt="Nachodish">
+                            </div>
+                            <div class="title3">Recipe</div>
+                        </div>
+
+                        <h3>For the spice mix:</h3>
+                        <ul>
+                            <li>2 tablespoons chili powder</li>
+                            <li>1 1/2 teaspoons salt</li>
+                            <li>1 teaspoon garlic</li>
+                            <li>1 teaspoon onion</li>
+                            <li>1 teaspoon cumin</li>
+                            <li>1/2 teaspoon dried oregano</li>
+                            <li>1/4 teaspoon black pepper</li>
+                            <li>Pinch of cayenne pepper (optional)</li>
+                        </ul>
+                
+                        <h3>Ground beef</h3> 
+                        <ul>
+                            <li>Jalapeño</li>
+                            <li>Tomatoes</li>
+                            <li>Corn</li>
+                            <li>Cucumber</li>
+                            <li>Red onion</li>
+                            <li>Cilantro</li>
+                        </ul>
+                        
+                        <h3>Tortilla chips</h3>
+                    </div>
+
+                    <div class="instructions">
+                        <p>Cook spice mix with ground beef</p>
+                        <p>Chop everything into smaller pieces</p>
+                        <p>Serve everything together with toppings</p>
+                    </div> 
+                </div>
+
+                <div class="opacity">
+                    <img class="chili" src="./images/chili.png" alt="chili">
+                    <img class="dish" src="./images/nacho-transparent.png" alt="nacho-transparent">
+                </div>
+            </div>
+        </div>
+
+        <div class="section4">
+            <div>
+                <h4 class="t1">Cheddar</h4>
+                <h4 class="t2">Guacamole</h4>
+                <h4 class="t3">Salsa</h4>
+            </div>
+            <div>
+                <div>
+                    <img id="cheddar" class="dip" src="./images/cheddar.png" alt="cheddar">
+                </div>
+                <div>
+                    <img id="guacamole" class="dip" src="./images/guacamole.png" alt="guacamole">
+                </div>
+                <div>
+                    <img id="salsa" class="dip" src="./images/salsa 2.png" alt="salsa">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">Created by bea09bea@gmail.com</div>
+    </main>
+
+    <script>
+        window.onscroll = function () {
+            scrollRotate();
+        };
+
+        function scrollRotate() {
+            let image = document.getElementById("mainImg");
+            image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+        }
+    </script>
+
+</body>
+</html>

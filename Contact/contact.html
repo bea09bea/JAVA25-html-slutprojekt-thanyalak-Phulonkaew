@@ -4,11 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakta mig</title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../Image/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Style-components/reset.css">
+    <link rel="stylesheet" href="../Style-components/template.css">
+    <link rel="stylesheet" href="../Style-components/nav.css">
+    <link rel="stylesheet" href="../Style-components/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Norican&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    
+    <nav>
+        <a href="../index.html">Hem</a>
+        <a href="../About/about.html">Om mig</a>
+        <a id="current-page" href="../Contact/contact.html">Kontakta mig</a>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Projekt</button>
+            <div class="dropdown-content">
+                <a href="../Projects/projekt1/project1.html">Projekt 1</a>
+                <a href="../Projects/projekt2/project2.html">Projekt 2</a>
+                <a href="../Projects/projekt3/project3.html">Projekt 3</a>
+            </div>          
+        </div>
+    </nav>
+
+    <div>
+        <h3>Kontakta mig här</h3>
+        <label for="firstname">Förnamn:</label>
+        <input type="text" placeholder="Förnamn">
+
+        <label for="lastname">Efternamn:</label>
+        <input type="text" placeholder="Efternamn">
+
+        <label for="mail">Mail adress:</label>
+        <input type="text" name="mail" id="mail" placeholder="Mailadress">
+
+        <label for="message">Ditt meddelande:</label>
+        <textarea name="text" placeholder="Skriv här..."></textarea>
+        <button id="button" type="button" class="btn btn-danger">Skicka</button>
+    </div>
+
+    <footer>
+        <div>
+            <img  src="../Footer-images/footer-img.png" alt="footer-text">
+        </div>
+
+        <div>
+            <a href="../About/about.html">Om mig</a>
+            <a href="../Contact/contact.html">Kontakta mig</a>
+            <p>Bea09bea@gmail.com</p>
+            <div class="position">
+                <img src="../Footer-images/pin.png" alt="pin">
+                <p>Malmö</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="social" src="../Footer-images/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://se.linkedin.com/" target="_blank">
+                    <img id="social" src="../Footer-images/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

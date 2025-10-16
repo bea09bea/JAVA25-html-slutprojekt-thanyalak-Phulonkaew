@@ -1,0 +1,221 @@
+body > div {
+    display: flex;
+    flex-direction: column;
+}
+
+body > div > h1 {
+    text-align: center;
+    font-size: var(--title);
+    margin: 1rem;
+}
+
+#title{
+    margin: 5rem;
+    text-shadow: 2px 2px var(--primary-red);
+    color: var(--primary-pink);
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem
+}
+
+#portrait {
+    width: 20rem;
+}
+
+li {
+    font-size: var(--text);
+    line-height: 50px;
+}
+
+h3 {
+    font-size: var(--title2);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-container > div:first-child {
+    text-align: center;
+}
+
+.about-container > div:first-child > img {
+    width: 20rem;
+}
+
+.education-container > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+.competence{
+    padding-left: 10rem;
+    list-style: none;
+}
+
+.year {
+    list-style: none;
+    position: absolute;
+}
+
+.demographic {
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.demographic > div {
+    margin: 1rem;
+}
+
+#pin {
+    width: 2.5rem;
+}
+
+.demographic > div:nth-child(3) {
+    display: flex;
+    font-size: 2rem;
+}
+
+.demographic > div:nth-child(1), 
+.demographic > div:nth-child(2) {
+    font-size: var(--text);
+}
+
+.education-container, .skills-container {
+    margin-bottom: 5rem;
+}
+
+ .demographic {
+    margin-right: 15rem;
+}
+
+#torso {
+    opacity: 0.2;
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+    z-index: -1;
+    width: 50rem;
+}
+
+@media screen and (max-width: 1325px) {
+    #torso {
+        width: 40rem;
+        left: 40vw;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    li {
+        font-size: 1.3rem;
+    }
+
+    #torso {
+        width: 30rem;
+        left: 50vw;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+        li {
+        font-size: 1rem;
+    }
+
+    #portrait {
+        width: 15rem;
+    }
+
+    #torso {
+        width: 25rem;
+        left: 45vw;
+    }
+
+    .demographic > div:nth-child(1), 
+    .demographic > div:nth-child(2) ,
+    .demographic > div:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    #pin {
+        width: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #portrait {
+        width: 10rem;
+    }
+
+    .competence{
+    padding-left: 6rem;
+    list-style: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    li {
+        font-size: 10px;
+    }
+
+    .demographic {
+        margin-right: 4rem;
+    }
+
+    #torso {
+        width: 15rem;
+        left: 46vw;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .demographic {
+        margin-right: 2.5rem;
+    }
+
+    .demographic > div:nth-child(1), 
+    .demographic > div:nth-child(2) ,
+    .demographic > div:nth-child(3) {
+        font-size: 0.5rem;
+    }
+
+    #portrait {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portrait {
+        width: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    #torso {
+        width: 15rem;
+        left: 30vw;
+        top: 50vh;
+    }
+
+    .demographic > div:nth-child(3){
+        margin-bottom: 5rem;
+    }
+
+    #pin {
+        width: 0.5rem;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+}
