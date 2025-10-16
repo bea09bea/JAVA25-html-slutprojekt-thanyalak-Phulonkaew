@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om mig</title>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../nav.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Style-components/reset.css">
+    <link rel="stylesheet" href="../Style-components/template.css">
+    <link rel="stylesheet" href="../Style-components/nav.css">
+    <link rel="stylesheet" href="../Style-components/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Norican&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
     <link rel="icon" href="../Image/favicon.png">
 </head>
 <body>
     <nav>
         <a href="../index.html">Hem</a>
-        <a href="../About/about.html">Om mig</a>
+        <a id="current-page" href="../About/about.html">Om mig</a>
         <a href="../Contact/contact.html">Kontakta mig</a>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Projekt</button>
+            <div class="dropdown-content">
+                <a href="../Projects/projekt1/project1.html">Projekt 1</a>
+                <a href="../Projects/projekt2/project2.html">Projekt 2</a>
+                <a href="../Projects/projekt3/project3.html">Projekt 3</a>
+            </div>          
+        </div>
     </nav>
 
     <div>
-        <h1>Om mig</h1>
+        <h1 id="title">Om mig</h1>
 
         <div class="about-container">
             <div>
-                <img src="../Image/portrait.JPG" alt="Portrait">
+                <img id="portrait" src="../About/image/portrait.JPG" alt="Portrait">
             </div>
             <div class="education-container">
                 <h3>Utbildning</h3>
+        
                 <div>
                     <ul class="year">
-                        <li>2020-2023</li>
-                        <li>2023-2025</li>
                         <li>2025-2027</li>
+                        <li>2023-2025</li>
+                        <li>2020-2023</li>
                     </ul>
 
                     <ul class="competence">
-                        <li>Medieproduktion och Processdesign på Malmö Universitet</li>
-                        <li>Produktionsarbete & lageroperatör</li>
                         <li>Javautvecklare på Grit Academy</li>
+                        <li>Produktionsarbete & lageroperatör</li>
+                        <li>Medieproduktion och Processdesign på Malmö Universitet</li>
                     </ul>                       
                 </div>
             </div>
@@ -43,7 +60,7 @@
                 <div>25 år</div>
                 <div>Bea09bea@gmail.com</div>
                 <div>
-                    <img src="../Image/pin.png" alt="pin">
+                    <img id="pin" src="../Footer-images/pin.png" alt="pin">
                     <div>Malmö</div>
                 </div>
             </div>
@@ -64,6 +81,34 @@
             </div>            
         </div> 
     </div>
-    <footer></footer>
+    <div>
+        <img id="torso" src="../About/image/torso.png" alt="Turning Torso">
+    </div>
+
+    <footer>
+        <div>
+            <img  src="../Footer-images/footer-img.png" alt="footer-text">
+        </div>
+
+        <div>
+            <a href="../About/about.html">Om mig</a>
+            <a href="../Contact/contact.html">Kontakta mig</a>
+            <p>Bea09bea@gmail.com</p>
+            <div class="position">
+                <img src="../Footer-images/pin.png" alt="pin">
+                <p>Malmö</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="social" src="../Footer-images/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://se.linkedin.com/" target="_blank">
+                    <img id="social" src="../Footer-images/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

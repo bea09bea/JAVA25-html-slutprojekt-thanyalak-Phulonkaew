@@ -1,0 +1,80 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-pink);
+}
+
+nav > a, .dropdown-button  {
+    text-decoration: none;
+    color: var(--primary-red);
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--primary-pink);
+    text-align: center;
+    align-content: center;
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 500;
+    font-style: normal;}
+
+#current-page {
+    background-color: var(--primary-white);
+}
+
+nav > a:hover{
+    background-color: var(--primary-white);
+    color: var(--primary-pink);
+    cursor: pointer;
+}
+
+ .dropdown-content > a:hover{
+    color: var(--primary-pink);
+    cursor: pointer;
+    background-color: var(--primary-white);
+ }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    align-content: center;
+}
+
+.dropdown-content > a {
+    text-decoration: none;
+    color: var(--primary-red);
+    background-color: var(--primary-pink);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 3rem;
+    width: 10rem;
+    padding: 1rem;
+}
+
+.dropdown:hover .dropdown-button {
+    cursor: pointer;
+    display: block;
+    color: var(--primary-red);
+    background-color: var(--primary-white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 550px) {
+    nav > a, .dropdown-content > a, .dropdown-button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    nav > a, .dropdown-content > a, .dropdown-button {
+        font-size: 0.8rem;
+    }
+}
