@@ -82,7 +82,7 @@ footer > div:nth-child(2) > p {
     }
 }
 
-@media screen and (max-width: 450px)  {
+@media screen and (max-width: 400px)  {
     footer {
         display: flex;
         flex-direction: column;
