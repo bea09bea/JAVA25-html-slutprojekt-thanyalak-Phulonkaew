@@ -23,6 +23,7 @@ footer > div:first-child > img {
 footer > div >  a {
     height: 2rem;
     color: var(--primary-red);
+    font-size: 1.4rem;
 }
 
 footer > div > a:hover {
@@ -45,12 +46,12 @@ footer > div:last-child {
     height: 1.5rem;
 }
 
-.position > p {
-    font-size: 1rem;
+p {
+    font-size: 1.5rem;
 }
 
 #social {
-    height: 3rem;
+    height: 4rem;
     margin-right: 1rem;
     padding-bottom: 1rem;
 }
@@ -64,13 +65,38 @@ footer > div:nth-child(2) > p {
 }
 
 @media screen and (max-width: 750px)  {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
     footer > div:last-child > a, footer > div:last-child p, .position > p {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
+    }
+
+    footer > div:last-child {
+        margin-left: 2.5rem;
+    }
+
+    footer > div:first-child > img {
+        width: 23rem;
     }
 }
 
 @media screen and (max-width: 450px)  {
-    footer > div:last-child > a, footer > div:last-child p, .position > p {
-        font-size: 0.5rem;
+    footer {
+        display: flex;
+        flex-direction: column;
     }
+    footer > div:last-child > a, footer > div:last-child p, .position > p {
+        font-size: 1.2rem;
+    }
+
+    footer > div:last-child {
+        margin-left: 2rem;
+    }
+
+    footer > div:first-child > img {
+        width: 20rem;
+    }
+
 }

@@ -79,13 +79,13 @@ h1 {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
     .hero-image > img {
-        width: 15rem;
+        width: 18rem;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .content-text {
@@ -93,7 +93,8 @@ h1 {
     }
 
     .content-text > p, .content-text > a {
-        font-size: 10px;
+        font-size: 1.5rem;
+        line-height: 2rem;
         width: 20rem;
     }
 
@@ -107,6 +108,6 @@ h1 {
     }
 
     .contact-image > img {
-        width: 10rem;
+        width: 18rem;
     }
 }
