@@ -80,7 +80,7 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-    .hero-image > img {
+    .hero-image > picture > img {
         width: 18rem;
     }
 
@@ -102,12 +102,13 @@ h1 {
         font-size: 15px;
     }
 
-    .contact-image {
+    .contact-image > picture {
         display: flex;
         flex-direction: column;
     }
 
-    .contact-image > img {
+    .contact-image > picture > img {
         width: 18rem;
+        padding-bottom: 2rem;
     }
 }

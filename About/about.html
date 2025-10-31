@@ -37,7 +37,10 @@
 
         <div class="about-container">
             <div>
-                <img id="portrait" src="../About/image/portrait.JPG" alt="Portrait">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../About/image/portaitSmall.png">
+                    <img id="portrait" src="../About/image/portrait.JPG" alt="Portrait">
+                </picture>
             </div>
             <div class="education-container">
                 <h3>Utbildning</h3>
@@ -82,14 +85,19 @@
         </div> 
     </div>
     <div>
-        <img id="torso" src="../About/image/torso.png" alt="Turning Torso">
+        <picture>
+            <source media="(max-width: 500px)" srcset="../About/image/torso-small.png">
+            <img id="torso" src="../About/image/torso.png" alt="Turning Torso">
+        </picture>        
     </div>
 
     <footer>
         <div>
-            <img  src="../Footer-images/footer-img.png" alt="footer-text">
+            <picture>
+                <source media="(max-width: 500px)" srcset="../Footer-images/footer-img-small.png">
+                <img src="../Footer-images/footer-img.png" alt="footer-text" style="width:100%; height:auto;">
+            </picture>        
         </div>
-
         <div>
             <a href="../About/about.html">Om mig</a>
             <a href="../Contact/contact.html">Kontakta mig</a>
@@ -101,7 +109,10 @@
 
             <div class="social-icons">
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img id="social" src="../Footer-images/instagram.png" alt="Instagram">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="../Footer-images/instagram-small.png">
+                        <img id="social" src="../Footer-images/instagram.png" alt="Instagram">
+                    </picture>
                 </a>
 
                 <a href="https://se.linkedin.com/" target="_blank">
