@@ -96,7 +96,9 @@ footer > div:nth-child(2) > p {
     }
 
     footer > div:first-child > img {
-        width: 20rem;
+        /* width: 20rem; */
+        content: url("//Footer-images/");
+        width: 15rem;
     }
 
 }
