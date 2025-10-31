@@ -20,8 +20,8 @@ h1 {
     flex-direction: column;
 }
 
-.hero-image > img {
-    width: 40rem;
+.hero-image > picture > img {
+    width: 50rem;
     margin-top: 2rem;
 }
 
@@ -30,6 +30,11 @@ h1 {
     margin: 3rem 0rem 3rem;
     font-size: 20px;
     line-height: 30px;
+}
+
+.content-text > p {
+    font-size: 35px;
+    line-height: 35px;
 }
 
 .content-text > a {
@@ -49,8 +54,8 @@ h1 {
     align-content: center;
 }
 
-.contact-image > img {
-    width: 250px;
+.contact-image  > img {
+    width: 450px;
     margin: 2rem;
 }
 
