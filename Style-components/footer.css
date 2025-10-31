@@ -76,16 +76,6 @@ footer > div:nth-child(2) > p {
     footer > div:last-child {
         margin-left: 2.5rem;
     }
-
-    footer > div:first-child > img {
-        width: 23rem;
-    }
-
-    footer > div:first-child > img {
-        /* width: 20rem; */
-        content: url("//Footer-images/footer-img-small.png");
-        width: 15rem;
-    }
 }
 
 @media screen and (max-width: 400px)  {
@@ -100,11 +90,4 @@ footer > div:nth-child(2) > p {
     footer > div:last-child {
         margin-left: 2rem;
     }
-
-    footer > div:first-child > img {
-        /* width: 20rem; */
-        content: url("//Footer-images/footer-img-small.png");
-        width: 15rem;
-    }
-
 }
